@@ -1,20 +1,41 @@
+@media (max-width: 768px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+}
+
+
 body{
     background-image: url("./images/bg-intro-desktop.png");
     background-color: hsl(0, 100%, 74%);
     font-family: 'Poppins', sans-serif;
+    margin:0;
 }
 
+
+footer {
+  width: 100%;
+  font-size: 12px; 
+  text-align: center;
+  color: white;
+  }
+footer a{
+    color: hsl(0, 100%, 50%);
+}
+
+
 .main-container{
-    
     display: flex;
     margin: 5vw 10vw;
-    width: 80vw;
-    height: 50vw;
+    min-width: 80vw;
+    min-height: 50vw;
 }
+
+
 
 .left-container{
      position: relative;
-     width: 40vw;
+     min-width: 40vw;
      padding: 5vw 0vw;
      color:white;
 }
@@ -24,7 +45,7 @@ body{
 .right-container{
      position: relative;
      display: flexbox;
-     width: 40vw;
+     min-width: 40vw;
 }
 .top-container{
     background-color:  hsl(248, 32%, 49%);
